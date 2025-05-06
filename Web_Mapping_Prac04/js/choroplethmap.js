@@ -25,7 +25,11 @@ async function addGeoJson(url) {
       fillOpacity: 0.8,
     },
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('Value: ' + feature.properties.OBJECTID)
+      // Combine both properties into a single popup
+      layer.bindPopup(`
+        <b>District:</b> ${feature.properties.NIMI}<br>
+        <b>Value:</b> ${feature.properties.OBJECTID}
+      `)
     },
   }).addTo(map)
 }
