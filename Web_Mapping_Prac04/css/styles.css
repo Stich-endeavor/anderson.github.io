@@ -1,0 +1,66 @@
+/* Banner image styling */
+#mountains_01 {
+    width: 100%;       /* Full width of the screen */
+    height: 20vh;      /* Covers only the upper 20% of the viewport height */
+    overflow: hidden;  /* Ensures no part of the image spills out */
+}
+
+/* Navbar styling */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Title styling */
+.page-title h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Container styling */
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Map styling */
+#map {
+    height: 700px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.default-button {
+    position: absolute;
+    top: 263px;
+    left: 130px;
+    z-index: 1001;
+    padding: 8px 20px;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
